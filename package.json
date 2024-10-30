@@ -1,0 +1,26 @@
+{
+  "name": "PayrollTrackerForEmployess12",
+  "version": "1.0.0",
+  "description": "A command-line application for managing departments, roles, and employees.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "seed": "psql -U postgres -d departments_db -f seeds.sql",
+    "query": "psql -U postgres -d  departments_db -f query.sql"
+  },
+  "author": "Anthony Black",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "inquirer": "^8.2.4",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
+
+
+
+
